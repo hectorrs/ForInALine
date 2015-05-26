@@ -1,0 +1,26 @@
+// Implementation of the example described in chapter 2
+// of the Jason's manual
+
+MAS mars {
+
+    infrastructure: Centralised
+
+    environment: Blackboard
+    
+	/*
+	  INSTRUCCIONES:
+	  a1,a2: Son los nombres de los agentes que se corresponden a los
+	  		 ficheros a1.asl y a2.asl.
+	  "player1","player2": Identifica el jugador que se corresponde a cada
+	  		   agente en el juego
+	  [beliefs = "jugador(primero)"]: Especifica el jugador que va a realizar
+	  		   la primera jugada en la primera partida.
+	  
+	  Ejemplo de uso:
+	  		agents: player1 a1;
+					player2 a2 [beliefs = "jugador(primero)"];
+	*/
+	
+    agents: player1 a1;
+			player2 a2 [beliefs = "jugador(primero)"];
+}
